@@ -129,7 +129,7 @@ CraftingSystem.outOfGameCheck = function () {
 			delay(5000);
 
 			while (me.ingame) {
-				delay(1000);
+				delay(1300);
 			}
 
 			CraftingSystem.inGame = false;
@@ -495,7 +495,7 @@ CraftingSystem.dropItems = function () {
 		}
 
 		CraftingSystem.dropGold();
-		delay(1000);
+		delay(1300);
 		me.cancel();
 	}
 

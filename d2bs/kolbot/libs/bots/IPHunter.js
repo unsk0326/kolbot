@@ -40,14 +40,14 @@ function IPHunter() {
 
 			for (let i = (12 * 60); i > 0; i -= 1) {
 				me.overhead(":D IP found! - [" + ip + "] Next movement in: " + i + " sec.");
-				delay(1000);
+				delay(1300);
 			}
 		}
 	}
 
 	for (let i = (Config.IPHunter.GameLength * 60); i > 0; i -= 1) {
 		me.overhead(":( IP : [" + (ip) + "] NG: " + i + " sec");
-		delay(1000);
+		delay(1300);
 	}
 
 	D2Bot.printToConsole("IPHunter: IP was [" + ip + "]", 10);

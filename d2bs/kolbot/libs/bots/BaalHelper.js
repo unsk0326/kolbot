@@ -195,7 +195,7 @@ WSKLoop:
 				} while (party.getNext());
 			}
 
-			delay(1000);
+			delay(1300);
 		}
 
 		if (i === Config.BaalHelper.Wait) {
@@ -236,7 +236,7 @@ WSKLoop:
 				break;
 			}
 
-			delay(1000);
+			delay(1300);
 		}
 
 		if (i === Config.BaalHelper.Wait) {
@@ -328,7 +328,7 @@ MainLoop:
 			delay(500);
 		}
 
-		delay(1000);
+		delay(1300);
 		Pather.moveTo(15092, 5011);
 
 		portal = getUnit(2, 563);

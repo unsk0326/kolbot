@@ -1249,7 +1249,7 @@ CursorLoop:
 				if (!me.itemoncursor) {
 					if (Storage.Cube.MoveTo(item) && Storage.Cube.MoveTo(rune)) {
 						transmute();
-						delay(1000 + me.ping);
+						delay(1300 + me.ping);
 					}
 
 					cubeItems = me.findItems(-1, -1, 6); // Get cube contents
@@ -1584,7 +1584,7 @@ MainLoop:
 		if (stashGold) {
 			if (me.getStat(14) >= Config.StashGold && me.getStat(15) < 25e5 && this.openStash()) {
 				gold(me.getStat(14), 3);
-				delay(1000); // allow UI to initialize
+				delay(1300); // allow UI to initialize
 				me.cancel();
 			}
 		}

@@ -24,7 +24,7 @@ function BattleOrders () {
 
 					while (getTickCount() - tick < Config.BattleOrders.Wait * 1000) {
 						me.overhead("Waiting " + Math.round(((tick + (Config.BattleOrders.Wait * 1000)) - getTickCount()) / 1000) + " Seconds for other players");
-						delay(1000);
+						delay(1300);
 					}
 
 					this.checkForPlayers();
@@ -77,7 +77,7 @@ function BattleOrders () {
 					}
 
 					Precast.doPrecast(true);
-					delay(1000);
+					delay(1300);
 				}
 			}
 		}
@@ -138,7 +138,7 @@ function BattleOrders () {
 			break;
 		case 1: // Get BO
 			if (me.getState(32)) {
-				delay(1000);
+				delay(1300);
 
 				break MainLoop;
 			}

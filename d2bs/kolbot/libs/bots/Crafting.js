@@ -112,7 +112,7 @@ function Crafting() {
 					break;
 				}
 
-				delay(1000);
+				delay(1300);
 			}
 
 			gameRequest = false;
@@ -366,7 +366,7 @@ function shopStuff(npcId, classids, amount) {
 					moveNPC(npc, path[i], path[i + 1]);
 				}
 
-				delay(1000);
+				delay(1300);
 			}
 
 			if (j === leadTimeout) {
@@ -374,7 +374,7 @@ function shopStuff(npcId, classids, amount) {
 			}
 		}
 
-		delay(1000);
+		delay(1300);
 
 		return true;
 	};

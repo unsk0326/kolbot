@@ -50,7 +50,7 @@ function TristramLeech() {
 			break;
 		}
 
-		delay(1000);
+		delay(1300);
 	}
 
 	if (i === Config.TristramLeech.Wait) {
@@ -70,7 +70,7 @@ function TristramLeech() {
 			}
 		}
 
-		delay(1000);
+		delay(1300);
 	}
 
 	while (whereisleader.area === 38) {

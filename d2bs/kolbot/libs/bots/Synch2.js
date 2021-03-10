@@ -22,10 +22,10 @@ function Synch2() {
 
 	addEventListener("chatmsg", messageHandler2);
 
-	delay(1000);
+	delay(1300);
 	say(uRdyMsg2);
 
-	delay(1000);
+	delay(1300);
 
 	for (i = 0; i < 720 && !Synched2; i += 1) {
 		for (j = 0; j < Config.Synch.WaitFor.length; j += 1) {
@@ -40,7 +40,7 @@ function Synch2() {
 			}
 		}
 
-		delay(1000);
+		delay(1300);
 	}
 
 	if (!Synched) {
@@ -48,7 +48,7 @@ function Synch2() {
 		quit();
 	}
 
-	delay(1000);
+	delay(1300);
 
 	removeEventListener("chatmsg", messageHandler2);
 

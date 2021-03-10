@@ -108,7 +108,7 @@ function MFHelper() {
 				break;
 			}
 
-			delay(1000);
+			delay(1300);
 		}
 
 		if (i === 30) {
@@ -124,7 +124,7 @@ MainLoop:
 		if (me.playertype != 1 && me.mode === 17) {
 			while (!me.inTown) {
 				me.revive();
-				delay(1000);
+				delay(1300);
 			}
 
 			Town.move("portalspot");
@@ -172,7 +172,7 @@ MainLoop:
 					if (me.area === 39) {
 						Precast.doPrecast(false);
 						this.clearCowLevel();
-						delay(1000);
+						delay(1300);
 
 						if (!Pather.getPortal(null, player.name) || !Pather.usePortal(null, player.name)) {
 							Town.goToTown();
@@ -189,7 +189,7 @@ MainLoop:
 						delay(500 + me.ping);
 					}
 
-					delay(1000); // delay to make sure leader's area is accurate
+					delay(1300); // delay to make sure leader's area is accurate
 
 					if (!me.inTown && me.area === player.area) {
 						Precast.doPrecast(true);

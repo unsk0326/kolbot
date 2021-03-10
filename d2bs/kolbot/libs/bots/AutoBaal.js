@@ -165,7 +165,7 @@ function AutoBaal() {
 				break;
 			}
 
-			delay(1000);
+			delay(1300);
 		}
 
 		if (i === 30) {

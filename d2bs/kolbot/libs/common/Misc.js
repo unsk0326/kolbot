@@ -1366,7 +1366,11 @@ var Misc = {
 		}
 
 		var i;
-
+		
+		if (!(typeof unit != 'undefined' && unit)){
+			D2Bot.printToConsole("from logitem, unit is undefined or null", 4);
+			return false;
+		}		
 		if (!Config.LogKeys && ["pk1", "pk2", "pk3"].indexOf(unit.code) > -1) {
 			return false;
 		}

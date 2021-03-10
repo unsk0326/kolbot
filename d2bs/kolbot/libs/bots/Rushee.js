@@ -90,7 +90,7 @@ function Rushee() {
 			return false;
 		}
 
-		return Pickit.pickItem(item) && delay(1000);
+		return Pickit.pickItem(item) && delay(1300);
 	};
 
 	this.checkQuestMonster = function (classid) {
@@ -121,7 +121,7 @@ function Rushee() {
 			}
 
 			npc.interact();
-			delay(1000 + me.ping);
+			delay(1300 + me.ping);
 			me.cancel();
 
 			if (Pather.getPortal(null)) {
@@ -321,7 +321,7 @@ function Rushee() {
 				break;
 			}
 
-			delay(1000 + me.ping * 2);
+			delay(1300 + me.ping * 2);
 
 			while (!me.area) {
 				delay(500);
@@ -600,7 +600,7 @@ function Rushee() {
 						if (target) {
 							Pather.moveToUnit(target);
 							sendPacket(1, 0x13, 4, 0x2, 4, target.gid);
-							delay(1000);
+							delay(1300);
 							me.cancel();
 						}
 

@@ -186,7 +186,7 @@ MainLoop:
 				D2Bot.start(muleObj.muleProfile);
 			}
 
-			delay(1000);
+			delay(1300);
 
 			switch (muleInfo.status) {
 			case "loading":
@@ -227,7 +227,7 @@ MainLoop:
 
 				// Untested change 11.Feb.14.
 				for (i = 0; i < 8; i += 1) {
-					delay(1000);
+					delay(1300);
 
 					if (me.ingame && me.gameReady) {
 						break MainLoop;
@@ -251,7 +251,7 @@ MainLoop:
 		removeEventListener("copydata", MuleCheckEvent);
 
 		while (me.ingame) {
-			delay(1000);
+			delay(1300);
 		}
 
 		this.inGame = false;
@@ -261,7 +261,7 @@ MainLoop:
 		// No response - stop mule profile
 		if (failCount >= 260) {
 			D2Bot.stop(muleObj.muleProfile, true);
-			delay(1000);
+			delay(1300);
 		}
 
 		if (stopCheck && muleObj.stopProfile) {
@@ -387,7 +387,7 @@ MainLoop:
 
 		removeEventListener("copydata", DropStatusEvent);
 		D2Bot.stop(muleObj.muleProfile, true);
-		delay(1000);
+		delay(1300);
 
 		if (muleObj.stopProfile) {
 			D2Bot.start(muleObj.stopProfile);
@@ -399,7 +399,7 @@ MainLoop:
 
 		delay(2000);
 		quit();
-		//delay(10000);
+		//delay(13000);
 
 		return true;
 	},
@@ -422,7 +422,7 @@ MainLoop:
 			items[i].drop();
 		}
 
-		delay(1000);
+		delay(1300);
 		me.cancel();
 
 		return true;
@@ -541,7 +541,7 @@ MainLoop:
 			if (item && !Storage.Inventory.IsLocked(item, Config.Inventory)) {
 				D2Bot.printToConsole("AutoMule: Transfering Anni.", 7);
 				item.drop();
-				delay(1000);
+				delay(1300);
 				me.cancel();
 
 				return true;
@@ -555,7 +555,7 @@ MainLoop:
 		if (item) {
 			D2Bot.printToConsole("AutoMule: Transfering Torch.", 7);
 			item.drop();
-			delay(1000);
+			delay(1300);
 			me.cancel();
 
 			return true;

@@ -36,7 +36,7 @@ function Travincal() {
 		Attack.securePosition(orgX + 85, orgY - 139, 25, 5000);
 		Pather.moveTo(orgX + 85, orgY - 139);
 		Pather.makePortal();
-		delay(1000);
+		delay(1300);
 		Precast.doPrecast(true);
 	}
 

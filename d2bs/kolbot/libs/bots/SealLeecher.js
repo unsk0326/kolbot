@@ -22,7 +22,7 @@ function SealLeecher() {
 
 	// Wait until leader is partied
 	while (!Misc.inMyParty(Config.Leader)) {
-		delay(1000);
+		delay(1300);
 	}
 
 	while (Misc.inMyParty(Config.Leader)) {

@@ -799,7 +799,7 @@ var Attack = {
 				case 3: // Paladin Redemption addon
 					if (me.getSkill(124, 1)) {
 						Skill.setSkill(124, 0);
-						delay(1000);
+						delay(1300);
 					}
 
 					break;

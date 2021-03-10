@@ -465,7 +465,7 @@ AreaInfoLoop:
 				} while (party.getNext());
 			}
 
-			delay(1000);
+			delay(1300);
 		}
 
 		party = getParty();
@@ -510,7 +510,7 @@ CSLoop:
 			}
 
 			Attack.clear(30, 0, false, this.sort);
-			delay(1000);
+			delay(1300);
 		}
 
 		if (i === Config.DiabloHelper.Wait) {
@@ -525,7 +525,7 @@ CSLoop:
 				break;
 			}
 
-			delay(1000);
+			delay(1300);
 		}
 
 		if (i === Config.DiabloHelper.Wait) {

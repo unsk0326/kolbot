@@ -30,7 +30,7 @@ function OrgTorch() {
 						scriptBroadcast("muleTorch");
 						//quit();
 						scriptBroadcast("quit");
-						//delay(10000);
+						//delay(13000);
 					}
 
 					return true;
@@ -138,7 +138,7 @@ function OrgTorch() {
 			}
 
 			transmute();
-			delay(1000);
+			delay(1300);
 
 			portal = getUnit(2, "portal");
 
@@ -383,7 +383,7 @@ function OrgTorch() {
 				delay(500);
 			}
 
-			delay(1000);
+			delay(1300);
 
 			// Pick the keys after the hunters drop them and leave the game
 			Pickit.pickItems();

@@ -71,7 +71,7 @@ function Tristram() {
 
 	if (Config.Tristram.PortalLeech) {
 		Pather.makePortal();
-		delay(1000);
+		delay(1300);
 		Pather.teleport = !Config.Tristram.WalkClear && Pather._teleport;
 	}
 

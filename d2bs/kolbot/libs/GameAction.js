@@ -173,7 +173,7 @@ var GameAction = {
 			}
 
 			while ((getTickCount() - me.gamestarttime) < this.IngameTime * 1000) {
-				delay(1000);
+				delay(1300);
 			}
 
 			quit();

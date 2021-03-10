@@ -824,7 +824,7 @@ ModeLoop:
 			}
 
 			if (type === 2 && unit.mode === 0) {
-				if ((me.area === 83 && targetArea === 100 && me.getQuest(21, 0) !== 1) || (me.area === 120 && targetArea === 128 && me.getQuest(39, 0) !== 1)) {
+				if ((me.area === 83 || me.area === 120) && (targetArea == 100 || targetArea == 128) && (me.getQuest(21, 0) !== 1 || me.getQuest (39, 0) !== 1)) {
 					throw new Error("useUnit: Incomplete quest.");
 				}
 
@@ -1426,7 +1426,7 @@ MainLoop:
 
 						while (getTickCount() - tick < 3000) {
 							if (unit.mode) {
-								delay(1000);
+								delay(1300);
 
 								break;
 							}
@@ -1445,7 +1445,7 @@ MainLoop:
 						break;
 					}
 
-					delay(1000);
+					delay(1300);
 				}
 			} else if (me.area === 40 && target.course[0] === 47) { // Lut Gholein -> Sewers Level 1 (use Trapdoor)
 				this.moveToPreset(me.area, 5, 19);
@@ -1457,7 +1457,7 @@ MainLoop:
 					unit = getUnit(2, 357);
 
 					Misc.click(0, 0, unit);
-					delay(1000);
+					delay(1300);
 					me.cancel();
 
 					if (this.usePortal(46)) {

@@ -416,7 +416,7 @@ MainLoop:
 						break;
 					}
 
-					delay(1000);
+					delay(1300);
 				}
 
 				if (timeout >= 20) {
@@ -646,7 +646,7 @@ MainLoop:
 
 		if (getTickCount() - startTime >= Config.Enchant.GameLength * 6e4) {
 			say("Use kolbot or die!");
-			delay(1000);
+			delay(1300);
 
 			break;
 		}

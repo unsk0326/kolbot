@@ -127,7 +127,7 @@ var TorchSystem = {
 
 				delay(5000);
 				quit();
-				delay(10000);
+				delay(13000);
 
 				return true;
 			}
@@ -171,7 +171,7 @@ var TorchSystem = {
 
 				delay(5000);
 				quit();
-				//delay(10000);
+				//delay(13000);
 
 				return true;
 			}
@@ -326,7 +326,7 @@ var TorchSystem = {
 			delay(5000);
 
 			while (me.ingame) {
-				delay(1000);
+				delay(1300);
 			}
 
 			this.inGame = false;

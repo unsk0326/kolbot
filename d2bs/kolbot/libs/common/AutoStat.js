@@ -48,7 +48,7 @@ var AutoStat = new function () {
 		// cast holy shield if available
 		if (me.getSkill(117, 0) && !me.getState(101)) {
 			if (Precast.precastSkill(117)) {
-				delay(1000);
+				delay(1300);
 			} else {
 				return this.block;
 			}

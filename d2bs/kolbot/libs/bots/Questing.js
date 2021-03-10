@@ -203,7 +203,7 @@ function Questing() {
 			throw new Error();
 		}
 
-		delay(1000);
+		delay(1300);
 
 		anya = getUnit(2, 558);
 

@@ -263,7 +263,7 @@ function BaalAssistant() {
 					}
 				} while (partycheck.getNext());
 			}
-			delay(1000);
+			delay(1300);
 		}
 
 		if (i === Wait) {
@@ -279,7 +279,7 @@ function BaalAssistant() {
 			if (Misc.inMyParty(Leader)) {
 				break;
 			}
-			delay(1000);
+			delay(1300);
 		}
 
 		if (i === 30) {
@@ -321,7 +321,7 @@ function BaalAssistant() {
 						if (hotCheck) {
 							break;
 						}
-						delay(1000);
+						delay(1300);
 					}
 
 					if (!hotCheck) {
@@ -450,7 +450,7 @@ function BaalAssistant() {
 								if (safeCheck) {
 									break;
 								}
-								delay(1000);
+								delay(1300);
 							}
 
 							if (i === Wait) {
@@ -463,7 +463,7 @@ function BaalAssistant() {
 								break;
 							}
 
-							delay(1000);
+							delay(1300);
 						}
 
 						if (i === Wait) {
@@ -568,9 +568,9 @@ function BaalAssistant() {
 									Attack.clear(40);
 								} else {
 									while (Attack.checkMonster(getUnit(1, 571)) || Attack.checkMonster(getUnit(1, 572)) || Attack.checkMonster(getUnit(1, 573))) {
-										delay(1000);
+										delay(1300);
 									}
-									delay(1000);
+									delay(1300);
 								}
 
 								break MainLoop;
@@ -623,7 +623,7 @@ function BaalAssistant() {
 
 				if (portal) {
 					if (Helper) {
-						delay(1000);
+						delay(1300);
 					} else {
 						delay(4000);
 					}
@@ -637,7 +637,7 @@ function BaalAssistant() {
 				}
 
 				if (Helper) {
-					delay(1000);
+					delay(1300);
 					Pather.moveTo(15134, 5923);
 					baal = getUnit(1, 544);
 					Attack.kill(544);
@@ -652,7 +652,7 @@ function BaalAssistant() {
 					Pather.moveTo(15177, 5952);
 					baal = getUnit(1, 544);
 					while (baal) {
-						delay(1000);
+						delay(1300);
 						if (ngCheck) {
 							return true;
 						}

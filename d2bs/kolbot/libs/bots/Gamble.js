@@ -54,7 +54,7 @@ function Gamble() {
 			delay(500);
 		}
 
-		delay(1000);
+		delay(1300);
 	}
 
 	return true;

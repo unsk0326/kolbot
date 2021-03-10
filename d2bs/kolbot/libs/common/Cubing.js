@@ -989,7 +989,7 @@ IngredientLoop:
 		}
 
 		if (getUIFlag(0x1A) || getUIFlag(0x19)) {
-			delay(1000);
+			delay(1300);
 
 			while (getUIFlag(0x1A) || getUIFlag(0x19)) {
 				me.cancel();

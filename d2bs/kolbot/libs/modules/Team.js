@@ -119,7 +119,7 @@
 		}).update;
 
 		while (true) {
-			delay(1000);
+			delay(1300);
 		}
 
 	} else {

@@ -148,7 +148,7 @@ function ShopBot() {
 					) {
 				beep();
 				D2Bot.printToConsole("Match found!", 7);
-				delay(1000);
+				delay(1300);
 
 				if (npc.startTrade(menuId)) {
 					Misc.logItem("Shopped", items[i]);
@@ -304,7 +304,7 @@ function ShopBot() {
 				Pather.usePortal(109);
 
 				if (totalCycles === 0) {
-					delay(10000);
+					delay(13000);
 				}
 
 				delay(1500);

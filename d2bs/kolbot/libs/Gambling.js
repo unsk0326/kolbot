@@ -88,7 +88,7 @@ var Gambling = {
 					DataFile.updateStats("gold");
 					delay(5000);
 					quit();
-					//delay(10000);
+					//delay(13000);
 
 					return true;
 				}
@@ -115,7 +115,7 @@ var Gambling = {
 					gold(me.getStat(12) * 1e4, 4); // pick max carrying capacity
 				}
 
-				delay(1000);
+				delay(1300);
 			}
 		}
 	},
@@ -141,7 +141,7 @@ var Gambling = {
 				delay(5000);
 
 				while (me.ingame) {
-					delay(1000);
+					delay(1300);
 				}
 
 				this.inGame = false;

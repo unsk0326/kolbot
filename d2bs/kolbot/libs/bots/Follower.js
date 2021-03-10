@@ -558,12 +558,12 @@ function Follower() {
 			break;
 		}
 
-		delay(1000);
+		delay(1300);
 	}
 
 	if (!leader) {
 		say("Leader not found.");
-		delay(1000);
+		delay(1300);
 		quit();
 	} else {
 		say("Leader found.");
@@ -584,7 +584,7 @@ function Follower() {
 		if (me.mode === 17) {
 			while (!me.inTown) {
 				me.revive();
-				delay(1000);
+				delay(1300);
 			}
 
 			Town.move("portalspot");

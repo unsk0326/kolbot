@@ -22,11 +22,11 @@ function Synch() {
 
 	addEventListener("chatmsg", messageHandler);
 
-	delay(1000);
+	delay(1300);
 	say(uRdyMsg);
 
 	for (i = 0; i < 720 && !Synched; i += 1) {
-		delay(1000);
+		delay(1300);
 
 		for (j = 0; j < Config.Synch.WaitFor.length; j += 1) {
 			party = getParty(Config.Synch.WaitFor[j]);

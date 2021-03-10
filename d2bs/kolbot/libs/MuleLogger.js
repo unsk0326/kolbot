@@ -84,7 +84,7 @@ var MuleLogger = {
 			while ((getTickCount() - me.gamestarttime) < this.IngameTime * 1000) {
 				me.overhead("ÿc2Log items done. ÿc4Stay in " + "ÿc4game more:ÿc0 " + Math.floor(this.IngameTime - (getTickCount() - me.gamestarttime) / 1000) + " sec");
 
-				delay(1000);
+				delay(1300);
 
 				if ((getTickCount() - tick) > 0) {
 					sendPacket(1, 0x40); // quest status refresh, working as anti-idle
